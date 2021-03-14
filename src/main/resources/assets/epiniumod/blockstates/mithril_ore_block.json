@@ -1,0 +1,10 @@
+{
+  "variants":
+  {
+    "normal":
+    {
+        "model": "epiniumod:mithril_ore_block"
+    }
+  }
+
+}
