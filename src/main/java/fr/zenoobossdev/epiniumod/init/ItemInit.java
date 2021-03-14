@@ -4,6 +4,7 @@ import fr.zenoobossdev.epiniumod.objects.armour.ArmourBase;
 import fr.zenoobossdev.epiniumod.objects.items.ItemBase;
 import fr.zenoobossdev.epiniumod.objects.tools.*;
 import fr.zenoobossdev.epiniumod.util.Reference;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
@@ -23,7 +24,7 @@ public class ItemInit
     public static final ItemArmor.ArmorMaterial ARMOUR_MITHRIL = EnumHelper.addArmorMaterial("armour_mithril", Reference.MODID + ":mithril", 39, new int[]{4, 7, 9, 4}, 14, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 3.5F);
 
     //Tools
-    public static final Item MITHRIL_AXE = new ToolAxe("mithril_axe", TOOL_MITHRIL);
+    public static final Item MITHRIL_AXE = new ToolAxe("mithril_axe", TOOL_MITHRIL, CreativeTabs.TOOLS);
     public static final Item MITHRIL_HOE = new ToolHoe("mithril_hoe", TOOL_MITHRIL);
     public static final Item MITHRIL_PICKAXE = new ToolPickaxe("mithril_pickaxe", TOOL_MITHRIL);
     public static final Item MITHRIL_SHOVEL = new ToolShovel("mithril_shovel", TOOL_MITHRIL);

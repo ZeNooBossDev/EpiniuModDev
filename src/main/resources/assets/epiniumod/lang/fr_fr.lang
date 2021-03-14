@@ -1,3 +1,13 @@
 item.mithril_ingot.name=Lingot de Mithril
 tile.mithril_ore_block.name=Minerai de Mithril
 tile.mithril_block.name=Bloc de Mithril
+
+item.mithril_axe.name=Hache en Mithril
+item.mithril_boots.name=Bottes en Mithril
+item.mithril_chestplate.name=Plastron en Mithril
+item.mithril_helmet.name=Casque en Mithril
+item.mithril_hoe.name=Houe en Mithril
+item.mithril_leggings.name=Pantalon en Mithril
+item.mithril_pickaxe.name=Pioche en Mithril
+item.mithril_shovel.name=Pelle en Mithril
+item.mithril_sword.name=Epée en Mithril

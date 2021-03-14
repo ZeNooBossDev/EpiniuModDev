@@ -1,3 +1,13 @@
 item.mithril_ingot.name=Mithril Ingot
 tile.mithril_ore_block.name=Mithril Ore Block
 tile.mithril_block.name=Mithril Block
+
+item.mithril_axe.name=Mithril Axe
+item.mithril_boots.name=Mithril Boots
+item.mithril_chestplate.name=Mithril Chestplate
+item.mithril_helmet.name=Mithril Helmet
+item.mithril_hoe.name=Mithril Hoe
+item.mithril_leggings.name=Mithril Leggings
+item.mithril_pickaxe.name=Mithril Pickaxe
+item.mithril_shovel.name=Mithril Shovel
+item.mithril_sword.name=Mithril Sword
