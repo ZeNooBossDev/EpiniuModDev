@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "i"
+  ],
+  "key": {
+    "i": {
+      "item": "epiniumod:mithril_block"
+    }
+  },
+  "result": {
+    "item": "epiniumod:mithril_ingot",
+    "count": 9
+  }
+}

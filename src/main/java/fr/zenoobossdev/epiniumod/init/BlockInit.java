@@ -14,6 +14,6 @@ public class BlockInit
     public static List<Block> BLOCKS = new ArrayList<Block>();
 
     public static final Block MITHRIL_ORE_BLOCK = new BlockBasic("mithril_ore_block", Material.ROCK);
-    public static final Block Mithril_BLOCK = new MithrilBlock("mithril_block", Material.IRON);
+    public static final Block MITHRIL_BLOCK = new MithrilBlock("mithril_block", Material.IRON);
 
 }

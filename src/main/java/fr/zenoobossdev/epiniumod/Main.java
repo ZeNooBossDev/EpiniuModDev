@@ -2,7 +2,10 @@ package fr.zenoobossdev.epiniumod;
 
 
 import fr.zenoobossdev.epiniumod.proxy.CommonProxy;
+import fr.zenoobossdev.epiniumod.tabs.EpiniumTab;
 import fr.zenoobossdev.epiniumod.util.Reference;
+import fr.zenoobossdev.epiniumod.util.handlers.RegistryHandler;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -13,6 +16,9 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 @Mod(modid = Reference.MODID, name = Reference.NAME, version = Reference.VERSION)
 public class Main
 {
+
+    public static final CreativeTabs epiniumtab = new EpiniumTab("epiniumtab");
+
     @Mod.Instance
     public static Main instance;
 
@@ -28,12 +34,14 @@ public class Main
 
         proxy.preInit();
 
+        RegistryHandler.preInitRegistries();
+
     }
 
     @Mod.EventHandler
     public static void init(FMLInitializationEvent e)
     {
-
+        RegistryHandler.initRegistries();
     }
 
     @Mod.EventHandler

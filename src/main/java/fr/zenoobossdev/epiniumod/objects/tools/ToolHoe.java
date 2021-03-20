@@ -13,7 +13,7 @@ public class ToolHoe extends ItemHoe implements IHasModel
         super(material);
         setUnlocalizedName(name);
         setRegistryName(name);
-        setCreativeTab(CreativeTabs.TOOLS);
+        setCreativeTab(Main.epiniumtab);
         ItemInit.ITEMS.add(this);
     }
 

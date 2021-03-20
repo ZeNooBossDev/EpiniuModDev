@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "iii",
+    " s ",
+    " s "
+  ],
+  "key": {
+    "i": {
+      "item": "epiniumod:mithril_ingot"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "epiniumod:mithril_pickaxe",
+    "count": 1
+  }
+}

@@ -48,4 +48,14 @@ public class RegistryHandler
        
     }
 
-}}
+}
+
+public static void preInitRegistries()
+{
+}
+
+public static void initRegistries()
+{
+    RecipesHandler.registerRecipes();
+}
+}
