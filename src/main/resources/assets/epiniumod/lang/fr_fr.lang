@@ -11,4 +11,5 @@ item.mithril_leggings.name=Pantalon en Mithril
 item.mithril_pickaxe.name=Pioche en Mithril
 item.mithril_shovel.name=Pelle en Mithril
 item.mithril_sword.name=Epée en Mithril
-itemGroup.epiniumtab.name=Epinium
+itemGroup.epiniumtab=Epinium
+container.diamond_furnace=Four en Diamant

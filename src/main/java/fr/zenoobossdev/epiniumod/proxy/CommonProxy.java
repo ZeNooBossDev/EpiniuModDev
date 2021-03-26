@@ -1,6 +1,12 @@
 package fr.zenoobossdev.epiniumod.proxy;
 
+import fr.zenoobossdev.epiniumod.util.Reference;
+import net.minecraft.block.Block;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
+import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class CommonProxy
 {
@@ -14,6 +20,22 @@ public class CommonProxy
 
     }
 
+
+    @SubscribeEvent
+    public static void registerBlocks(RegistryEvent.Register<Block> event) {
+        event.getRegistry().register(new DataBlock());
+        GameRegistry.registerTileEntity(DataTileEntity.class, Reference.MODID + "_datablock");
+
+
+    }
+
+    @SubscribeEvent
+    public static void registerItems(RegistryEvent.Register<Item> event) {
+        event.getRegistry().register(new ItemBlock(ModBlocks.dataBlock).setRegistryName(ModBlocks.dataBlock.getRegistryName()));
+
+
+    }
+
     public void registerEntityRenderers()
     {
 
@@ -22,4 +44,6 @@ public class CommonProxy
     {
 
     }
+
+
 }

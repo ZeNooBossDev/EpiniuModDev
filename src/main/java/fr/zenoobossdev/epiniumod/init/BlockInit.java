@@ -3,6 +3,7 @@ package fr.zenoobossdev.epiniumod.init;
 
 import fr.zenoobossdev.epiniumod.objects.blocks.BlockBasic;
 import fr.zenoobossdev.epiniumod.objects.blocks.MithrilBlock;
+import fr.zenoobossdev.epiniumod.objects.blocks.machines.diamond_furnace.DiamondFurnace;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
@@ -15,5 +16,7 @@ public class BlockInit
 
     public static final Block MITHRIL_ORE_BLOCK = new BlockBasic("mithril_ore_block", Material.ROCK);
     public static final Block MITHRIL_BLOCK = new MithrilBlock("mithril_block", Material.IRON);
+    public static final Block DIAMOND_FURNACE = new DiamondFurnace("diamond_furnace");
+
 
 }

@@ -11,4 +11,6 @@ item.mithril_leggings.name=Mithril Leggings
 item.mithril_pickaxe.name=Mithril Pickaxe
 item.mithril_shovel.name=Mithril Shovel
 item.mithril_sword.name=Mithril Sword
-itemGroup.epiniumtab.name=Epinium
+itemGroup.epiniumtab=Epinium
+
+container.diamond_furnace=Diamond Furnace
