@@ -26,11 +26,11 @@ public class DiamondFurnaceRecipes
 
     private DiamondFurnaceRecipes()
     {
-        addFurnaceRecipe(new ItemStack(BlockInit.MITHRIL_ORE_BLOCK), new ItemStack(Items.COAL), new ItemStack(ItemInit.MITHRIL_INGOT), 5.0F);
+        addDiamondFurnaceRecipe(new ItemStack(Items.COAL),new ItemStack(BlockInit.MITHRIL_ORE_BLOCK), new ItemStack(ItemInit.MITHRIL_INGOT), 5.0F);
     }
 
 
-    public void addFurnaceRecipe(ItemStack input1, ItemStack input2, ItemStack result, float experience)
+    public void addDiamondFurnaceRecipe(ItemStack input1, ItemStack input2, ItemStack result, float experience)
     {
         if(getDiamondResult(input1, input2) != ItemStack.EMPTY) return;
         this.smeltingList.put(input1, input2, result);

@@ -2,6 +2,8 @@ package fr.zenoobossdev.epiniumod.util.handlers;
 
 
 
+import com.google.common.graph.Network;
+import fr.zenoobossdev.epiniumod.Main;
 import fr.zenoobossdev.epiniumod.init.BlockInit;
 import fr.zenoobossdev.epiniumod.init.ItemInit;
 import fr.zenoobossdev.epiniumod.util.interfaces.IHasModel;
@@ -12,6 +14,7 @@ import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @Mod.EventBusSubscriber
@@ -28,6 +31,7 @@ public class RegistryHandler
     public static void onBlockRegister(RegistryEvent.Register<Block> event)
     {
         event.getRegistry().registerAll(BlockInit.BLOCKS.toArray(new Block[0]));
+        TileEntityHandler.registerTileEntities();
     }
 
 
@@ -60,5 +64,6 @@ public static void preInitRegistries()
 public static void initRegistries()
 {
     RecipesHandler.registerRecipes();
+    NetworkRegistry.INSTANCE.registerGuiHandler(Main.instance, new GuiHandler());
 }
 }

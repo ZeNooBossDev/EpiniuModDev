@@ -11,7 +11,6 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 
@@ -38,15 +37,12 @@ public class Main
 
         RegistryHandler.preInitRegistries();
 
-
     }
 
     @Mod.EventHandler
     public static void init(FMLInitializationEvent e)
     {
         RegistryHandler.initRegistries();
-
-
     }
 
     @Mod.EventHandler

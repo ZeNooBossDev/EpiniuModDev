@@ -1,5 +1,7 @@
 package fr.zenoobossdev.epiniumod.util;
 
+import fr.zenoobossdev.epiniumod.objects.blocks.GuiBasicMetallicInfuser;
+
 public class Reference
 {
     public static final String MODID = "epiniumod";
@@ -10,4 +12,5 @@ public class Reference
 
     public static final int GUI_DIAMOND_FURNACE = 0;
 
+    public static final int GUI_BASIC_METALLIC_INFUSER = 0;
 }

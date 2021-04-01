@@ -1,0 +1,12 @@
+{
+  "parent": "block/orientable",
+  "textures": {
+    "particle": "epiniumod:blocks/diamond_furnace_side",
+    "up": "epiniumod:blocks/diamond_furnace_up",
+    "down": "epiniumod:blocks/diamond_furnace_up",
+    "north": "epiniumod:blocks/diamond_furnace_front_on",
+    "east": "epiniumod:blocks/diamond_furnace_side",
+    "south": "epiniumod:blocks/diamond_furnace_side",
+    "west": "epiniumod:blocks/diamond_furnace_side"
+  }
+}
