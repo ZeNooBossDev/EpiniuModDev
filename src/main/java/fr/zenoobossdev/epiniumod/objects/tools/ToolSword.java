@@ -18,6 +18,8 @@ public class ToolSword extends ItemSword implements IHasModel
         ItemInit.ITEMS.add(this);
     }
 
+
+
     @Override
     public void registerModels() {
         Main.proxy.registerItemRenderer(this, 0);

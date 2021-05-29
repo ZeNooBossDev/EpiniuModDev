@@ -1,0 +1,9 @@
+{
+  "variants":
+  {
+    "normal":
+    {
+      "model": "epiniumod:cave_block"
+    }
+  }
+}

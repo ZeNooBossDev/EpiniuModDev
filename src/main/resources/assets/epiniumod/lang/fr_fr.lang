@@ -1,7 +1,11 @@
-item.mithril_ingot.name=Lingot de Mithril
 tile.mithril_ore_block.name=Minerai de Mithril
 tile.mithril_block.name=Bloc de Mithril
+tile.diamond_furnace.name=Four en Diamant
+tile.volcanium_block.name=Bloc de Volcanium
+tile.volcanium_ore_block.name=Minerai de Volcanium
+tile.cave_block.name=Cave Block
 
+item.mithril_ingot.name=Lingot de Mithril
 item.mithril_axe.name=Hache en Mithril
 item.mithril_boots.name=Bottes en Mithril
 item.mithril_chestplate.name=Plastron en Mithril
@@ -11,5 +15,25 @@ item.mithril_leggings.name=Pantalon en Mithril
 item.mithril_pickaxe.name=Pioche en Mithril
 item.mithril_shovel.name=Pelle en Mithril
 item.mithril_sword.name=Epée en Mithril
+title.diamond_furnace.name=Four en Diamant
+item.volcanium_axe.name=Hache en Volcanium
+item.volcanium_pickaxe.name=Pioche en Volcanium
+item.volcanium_hoe.name=Houe en Volcanium
+item.volcanium_shovel.name=Pelle en Volcanium
+item.volcanium_sword.name=Epee en Volcanium
+item.volcanium_chestplate.name=Plastron en Volcanium
+item.volcanium_leggings.name=Pantalon en Volcanium
+item.volcanium_boots.name=Bottes en Volcanium
+item.volcanium_helmet.name=Casque en Volcanium
+item.mithril_stick.name=Bâton en Mithril
+item.volcanium_orb.name=Orbe de Volcanium
+item.volcanium_hammer.name=Marteau en Volcanium
+item.money.name=Monaie
+
 itemGroup.epiniumtab=Epinium
+
 container.diamond_furnace=Four en Diamant
+
+xpcommand.help=/xp <job> <action(add, reduce, set)> <target_name> <value>
+
+

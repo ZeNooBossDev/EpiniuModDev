@@ -1,0 +1,7 @@
+[display]
+fullscreen=true
+
+[gource]
+auto-skip-seconds=3
+user-image-dir=directory
+

@@ -43,7 +43,7 @@ public class MithrilArmor extends ItemArmor implements IHasModel
     {
         if (this.armorType == EntityEquipmentSlot.HEAD)
         {
-        player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 20, -1));
+        player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 40, -1));
 
     }
 

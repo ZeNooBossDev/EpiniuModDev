@@ -19,6 +19,7 @@ public class BlockBasic extends Block implements IHasModel
         setRegistryName(name);
         setCreativeTab(Main.epiniumtab);
         setHardness(4.0F);
+        setHarvestLevel("pickaxe", 3);
         BlockInit.BLOCKS.add(this);
         ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(name));
     }

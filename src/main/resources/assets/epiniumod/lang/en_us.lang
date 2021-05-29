@@ -1,7 +1,11 @@
-item.mithril_ingot.name=Mithril Ingot
 tile.mithril_ore_block.name=Mithril Ore Block
 tile.mithril_block.name=Mithril Block
+tile.diamond_furnace.name=Diamond Furnace
+tile.volcanium_block.name=Volcanium Block
+tile.volcanium_ore_block.name=Volcanium Ore Block
+tile.cave_block.name=Cave Block
 
+item.mithril_ingot.name=Mithril Ingot
 item.mithril_axe.name=Mithril Axe
 item.mithril_boots.name=Mithril Boots
 item.mithril_chestplate.name=Mithril Chestplate
@@ -11,6 +15,23 @@ item.mithril_leggings.name=Mithril Leggings
 item.mithril_pickaxe.name=Mithril Pickaxe
 item.mithril_shovel.name=Mithril Shovel
 item.mithril_sword.name=Mithril Sword
+title.diamond_furnace.name=Diamond Furnace
+item.volcanium_axe.name=Volcanium Axe
+item.volcanium_pickaxe.name=Volcanium Pickaxe
+item.volcanium_hoe.name=Volcanium Hoe
+item.volcanium_shovel.name=Volcanium Shovel
+item.volcanium_sword.name=Volcanium Sword
+item.volcanium_helmet.name=Volcanium Helmet
+item.volcanium_chestplate.name=Volcanium Chestplate
+item.volcanium_leggings.name=Volcanium Leggings
+item.volcanium_boots.name=Volcanium Boots
+item.mithril_stick.name=Mithril Stick
+item.volcanium_orb.name=Volcanium Orb
+item.volcanium_hammer.name=Volcanium Hammer
+item.money.name=Money
+
 itemGroup.epiniumtab=Epinium
 
 container.diamond_furnace=Diamond Furnace
+
+xpcommand.help=/xp <job> <action(add, reduce, set)> <target_name> <value>

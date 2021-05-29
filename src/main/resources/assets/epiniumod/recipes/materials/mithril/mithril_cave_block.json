@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "isi",
+    "ses",
+    "isi"
+  ],
+  "key": {
+    "i": {
+      "item": "epiniumod:mithril_ingot"
+    },
+    "s": {
+      "item": "minecraft:glass"
+    },
+    "e": {
+      "item": "minecraft:ender_eye"
+    }
+  },
+  "result": {
+    "item": "epiniumod:cave_block",
+    "count": 1
+  }
+}

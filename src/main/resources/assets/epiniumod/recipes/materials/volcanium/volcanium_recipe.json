@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+
+    "i"
+  ],
+  "key": {
+    "i": {
+      "item": "epiniumod:volcanium_block"
+    }
+  },
+  "result": {
+    "item": "epiniumod:volcanium_orb",
+    "count": 1
+  }
+}

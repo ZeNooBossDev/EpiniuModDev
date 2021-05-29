@@ -11,6 +11,7 @@ public class RecipesHandler
     public static void registerRecipes()
     {
         GameRegistry.addSmelting(new ItemStack(BlockInit.MITHRIL_ORE_BLOCK), new ItemStack(ItemInit.MITHRIL_INGOT, 1), 5.0f);
+        GameRegistry.addSmelting(new ItemStack(BlockInit.VOLCANIUM_ORE_BLOCK), new ItemStack(ItemInit.VOLCANIUM_ORB, 1), 8.0f);
 
     }
 }

@@ -3,7 +3,7 @@
   "pattern":
   [
     "i i",
-    "i i",
+    "i i"
 
   ],
   "key": {
@@ -12,7 +12,7 @@
     }
   },
   "result": {
-    "item": "epiniumod:mithril_leggings",
+    "item": "epiniumod:mithril_boots",
     "count": 1
   }
 }

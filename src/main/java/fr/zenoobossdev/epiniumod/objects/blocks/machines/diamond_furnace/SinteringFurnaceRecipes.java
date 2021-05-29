@@ -15,6 +15,7 @@ public class SinteringFurnaceRecipes
 	private static final SinteringFurnaceRecipes INSTANCE = new SinteringFurnaceRecipes();
 	private final Table<ItemStack, ItemStack, ItemStack> smeltingList = HashBasedTable.<ItemStack, ItemStack, ItemStack>create();
 	private final Map<ItemStack, Float> experienceList = Maps.<ItemStack, Float>newHashMap();
+
 	
 	public static SinteringFurnaceRecipes getInstance()
 	{
@@ -23,18 +24,18 @@ public class SinteringFurnaceRecipes
 	
 	private SinteringFurnaceRecipes() 
 	{
-		addSinteringRecipe(new ItemStack(Blocks.ACACIA_FENCE), new ItemStack(Blocks.ACACIA_FENCE_GATE), new ItemStack(BlockInit.MITHRIL_BLOCK), 5.0F);
+		addSinteringRecipe(new ItemStack(BlockInit.MITHRIL_ORE_BLOCK), new ItemStack(Blocks.PUMPKIN), new ItemStack(BlockInit.MITHRIL_BLOCK), 5.0F);
 	}
 
 	
-	public void addSinteringRecipe(ItemStack input1, ItemStack input2, ItemStack result, float experience) 
+	public void addSinteringRecipe(ItemStack input1, ItemStack input2, ItemStack result, float experience)
 	{
 		if(getSinteringResult(input1, input2) != ItemStack.EMPTY) return;
 		this.smeltingList.put(input1, input2, result);
 		this.experienceList.put(result, Float.valueOf(experience));
 	}
 	
-	public ItemStack getSinteringResult(ItemStack input1, ItemStack input2) 
+	public ItemStack getSinteringResult(ItemStack input1, ItemStack input2)
 	{
 		for(Entry<ItemStack, Map<ItemStack, ItemStack>> entry : this.smeltingList.columnMap().entrySet()) 
 		{
@@ -51,6 +52,9 @@ public class SinteringFurnaceRecipes
 		}
 		return ItemStack.EMPTY;
 	}
+
+
+
 	
 	private boolean compareItemStacks(ItemStack stack1, ItemStack stack2)
 	{

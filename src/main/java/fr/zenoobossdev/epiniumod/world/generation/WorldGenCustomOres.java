@@ -17,10 +17,12 @@ import java.util.Random;
 public class WorldGenCustomOres implements IWorldGenerator
 {
     private WorldGenerator mithril_ore_block;
+    private WorldGenerator volcanium_ore_block;
 
     public WorldGenCustomOres()
     {
-        mithril_ore_block = new WorldGenMinable(BlockInit.MITHRIL_ORE_BLOCK.getDefaultState(), 10, BlockMatcher.forBlock(Blocks.STONE));
+        mithril_ore_block = new WorldGenMinable(BlockInit.MITHRIL_ORE_BLOCK.getDefaultState(), 4, BlockMatcher.forBlock(Blocks.STONE));
+        volcanium_ore_block = new WorldGenMinable(BlockInit.VOLCANIUM_ORE_BLOCK.getDefaultState(), 3, BlockMatcher.forBlock(Blocks.STONE));
     }
 
 
@@ -33,7 +35,8 @@ public class WorldGenCustomOres implements IWorldGenerator
             case -1:
                 break;
             case 0:
-                runGenerator(mithril_ore_block, world, random, chunkX, chunkZ, 30, 2, 22);
+                runGenerator(mithril_ore_block, world, random, chunkX, chunkZ, 13, 2, 22);
+                runGenerator(volcanium_ore_block, world, random, chunkX, chunkZ, 10, 2, 12);
                 break;
             case 1:
                 break;

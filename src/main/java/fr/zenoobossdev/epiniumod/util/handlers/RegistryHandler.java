@@ -5,6 +5,7 @@ package fr.zenoobossdev.epiniumod.util.handlers;
 import com.google.common.graph.Network;
 import fr.zenoobossdev.epiniumod.Main;
 import fr.zenoobossdev.epiniumod.init.BlockInit;
+import fr.zenoobossdev.epiniumod.init.EntityInit;
 import fr.zenoobossdev.epiniumod.init.ItemInit;
 import fr.zenoobossdev.epiniumod.util.interfaces.IHasModel;
 import fr.zenoobossdev.epiniumod.world.generation.WorldGenCustomOres;
@@ -59,6 +60,8 @@ public class RegistryHandler
 public static void preInitRegistries()
 {
     GameRegistry.registerWorldGenerator(new WorldGenCustomOres(), 0);
+    EntityInit.registerEntities();
+    
 }
 
 public static void initRegistries()

@@ -1,0 +1,10 @@
+{
+  "variants":
+  {
+    "normal":
+    {
+      "model": "epiniumod:volcanium_ore_block"
+    }
+  }
+
+}

@@ -9,13 +9,15 @@ import net.minecraft.item.ItemPickaxe;
 
 public class ToolPickaxe extends ItemPickaxe implements IHasModel
 {
-    public ToolPickaxe(String name, ToolMaterial material)
+    public ToolPickaxe(String name, ToolMaterial material, int harvestLevel)
     {
         super(material);
         setUnlocalizedName(name);
         setRegistryName(name);
         setCreativeTab(Main.epiniumtab);
         ItemInit.ITEMS.add(this);
+        setHarvestLevel("pickaxe", harvestLevel);
+
     }
 
     @Override

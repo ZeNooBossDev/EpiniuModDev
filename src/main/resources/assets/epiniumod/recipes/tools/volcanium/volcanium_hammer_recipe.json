@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "iii",
+    "iii",
+    " s "
+  ],
+  "key": {
+    "i": {
+      "item": "epiniumod:volcanium_orb"
+    },
+    "s": {
+      "item": "epiniumod:mithril_stick"
+    }
+  },
+  "result": {
+    "item": "epiniumod:volcanium_hammer",
+    "count": 1
+  }
+}

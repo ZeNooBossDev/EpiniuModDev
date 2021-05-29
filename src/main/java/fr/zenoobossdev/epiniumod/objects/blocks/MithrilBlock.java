@@ -12,13 +12,14 @@ import net.minecraft.item.ItemBlock;
 
 public class MithrilBlock extends Block implements IHasModel
 {
-    public MithrilBlock(String name, Material material)
+    public MithrilBlock(String name, Material material, int harvestLevel)
     {
         super(material);
         setUnlocalizedName(name);
         setRegistryName(name);
         setCreativeTab(Main.epiniumtab);
         setHardness(3.0F);
+        setHarvestLevel("pickaxe", harvestLevel);
         BlockInit.BLOCKS.add(this);
         ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(name));
     }

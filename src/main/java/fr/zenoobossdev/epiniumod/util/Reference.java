@@ -1,6 +1,5 @@
 package fr.zenoobossdev.epiniumod.util;
 
-import fr.zenoobossdev.epiniumod.objects.blocks.GuiBasicMetallicInfuser;
 
 public class Reference
 {
@@ -11,6 +10,9 @@ public class Reference
     public static final String COMMON ="fr.zenoobossdev.epiniumod.proxy.CommonProxy";
 
     public static final int GUI_DIAMOND_FURNACE = 0;
+    public static final int GUI_JOB_MINER = 1;
 
-    public static final int GUI_BASIC_METALLIC_INFUSER = 0;
+
+
+    public static final int ENTITY_VOLCANO_ZOMBIE = 9861;
 }

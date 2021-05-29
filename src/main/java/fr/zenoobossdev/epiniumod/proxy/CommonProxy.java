@@ -1,13 +1,15 @@
 package fr.zenoobossdev.epiniumod.proxy;
 
-import fr.zenoobossdev.epiniumod.util.Reference;
+import fr.zenoobossdev.epiniumod.objects.data.jobs.miner.CapabilityJobMiner;
+import fr.zenoobossdev.epiniumod.objects.data.jobs.miner.DefaultJobMinerStorage;
+import fr.zenoobossdev.epiniumod.objects.data.jobs.miner.Factory;
+import fr.zenoobossdev.epiniumod.util.interfaces.IJobMiner;
 import net.minecraft.block.Block;
-import net.minecraft.client.resources.I18n;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemBlock;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.capabilities.CapabilityManager;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class CommonProxy
 {
@@ -17,6 +19,12 @@ public class CommonProxy
     }
 
     public void registerVariantRenderer(Item item, int meta, String filename, String id)
+    {
+
+    }
+
+
+    public void registerGuis()
     {
 
     }
@@ -40,7 +48,8 @@ public class CommonProxy
     }
     public void preInit()
     {
-
+        CapabilityManager.INSTANCE.register(IJobMiner.class, new DefaultJobMinerStorage(),new Factory());
+        MinecraftForge.EVENT_BUS.register(CapabilityJobMiner.class);
     }
 
 }
