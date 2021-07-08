@@ -23,7 +23,9 @@ public class MinerGui extends GuiScreen
         mc.renderEngine.bindTexture(new ResourceLocation(Reference.MODID+ ":textures/gui/job_miner_empty.png"));
         drawTexturedModalRect(guiX, guiY, 0, 0, guiWidth+2, guiHeight+2);
         mc.renderEngine.bindTexture(new ResourceLocation(Reference.MODID+ ":textures/gui/jobs_progress_bar.png"));
-        drawTexturedModalRect(guiX+14, guiY+63, 0, 0, percentageXp, 9);
+        drawTexturedModalRect(guiX+14, guiY+63, 0, 0, this.percentageXp, 9);
+        fontRenderer.drawString("xp : "+this.xp, guiX+14, guiY+80, 1);
+
 
 
         super.drawScreen(mouseX, mouseY, partialTicks);
@@ -35,7 +37,6 @@ public class MinerGui extends GuiScreen
        this.xpToLevelUp = mc.player.getCapability(JobMinerWrapper.JOB_MINER_CAPABILITY, null).getXpLevelUp();
        this.level = mc.player.getCapability(JobMinerWrapper.JOB_MINER_CAPABILITY, null).getLevel();
        this.percentageXp = xp / xpToLevelUp * 218;
-        System.out.println(percentageXp);
-        super.initGui();
+       super.initGui();
     }
 }

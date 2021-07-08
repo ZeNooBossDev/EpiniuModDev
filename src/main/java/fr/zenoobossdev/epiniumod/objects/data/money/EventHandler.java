@@ -53,14 +53,7 @@ public class EventHandler
 
 
 
-    @SubscribeEvent
-    public void onAttachCapability(AttachCapabilitiesEvent<Entity> event)
-    {
-        if(event.getObject() instanceof EntityPlayer)
-        {
-            event.addCapability(new ResourceLocation(Reference.MODID + ":TUTO_CAP"), new TutoCapabilities((EntityPlayer) event.getObject()));
-        }
-    }
+
 
     @SubscribeEvent
     public static void playerTickUpdate(TickEvent.PlayerTickEvent event)

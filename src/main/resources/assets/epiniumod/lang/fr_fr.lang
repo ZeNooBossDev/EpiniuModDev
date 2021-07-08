@@ -29,6 +29,7 @@ item.mithril_stick.name=Bâton en Mithril
 item.volcanium_orb.name=Orbe de Volcanium
 item.volcanium_hammer.name=Marteau en Volcanium
 item.money.name=Monaie
+item.unclaim_finder.name=Detecteur a tile entities
 
 itemGroup.epiniumtab=Epinium
 

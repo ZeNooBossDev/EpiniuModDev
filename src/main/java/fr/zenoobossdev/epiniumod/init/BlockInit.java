@@ -7,6 +7,7 @@ import fr.zenoobossdev.epiniumod.objects.blocks.MithrilBlock;
 import fr.zenoobossdev.epiniumod.objects.blocks.machines.diamond_furnace.BlockDiamondFurnace;
 import fr.zenoobossdev.epiniumod.objects.blocks.VolcaniumOreBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockPlanks;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.ItemStack;
 
@@ -25,4 +26,5 @@ public class BlockInit
     public static final Block VOLCANIUM_BLOCK = new MithrilBlock("volcanium_block", Material.IRON, 4);
     public static final Block CAVE_BLOCK = new CaveBlock("cave_block", Material.IRON);
 
+    public static final Block VOLCANIC_PLANKS = new BlockPlanks();
 }

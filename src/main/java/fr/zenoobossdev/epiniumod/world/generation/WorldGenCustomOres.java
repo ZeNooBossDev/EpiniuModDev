@@ -36,7 +36,7 @@ public class WorldGenCustomOres implements IWorldGenerator
                 break;
             case 0:
                 runGenerator(mithril_ore_block, world, random, chunkX, chunkZ, 13, 2, 22);
-                runGenerator(volcanium_ore_block, world, random, chunkX, chunkZ, 10, 2, 12);
+                runGenerator(volcanium_ore_block, world, random, chunkX, chunkZ, 11, 2, 22);
                 break;
             case 1:
                 break;

@@ -28,7 +28,7 @@ public class GuiUnclaimFinder extends Gui
     final ResourceLocation te0_5 = new ResourceLocation(Reference.MODID + ":textures/gui/unclaim_finder_0-5.png");
     final ResourceLocation te6_10 = new ResourceLocation(Reference.MODID + ":textures/gui/unclaim_finder_6-10.png");
     final ResourceLocation te11_25 = new ResourceLocation(Reference.MODID + ":textures/gui/unclaim_finder_11-25.png");
-    final ResourceLocation te26_more = new ResourceLocation(Reference.MODID + ":textures/guiunclaim_finder_26+.png");
+    final ResourceLocation te26_more = new ResourceLocation(Reference.MODID + ":textures/gui/unclaim_finder_26+.png");
 
     public GuiUnclaimFinder()
     {

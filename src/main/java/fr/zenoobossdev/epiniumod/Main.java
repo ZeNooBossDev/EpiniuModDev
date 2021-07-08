@@ -3,10 +3,10 @@ package fr.zenoobossdev.epiniumod;
 
 import fr.zenoobossdev.epiniumod.objects.commands.JobCommand;
 import fr.zenoobossdev.epiniumod.objects.commands.LevelCommand;
+import fr.zenoobossdev.epiniumod.objects.commands.TestPacketsCommand;
 import fr.zenoobossdev.epiniumod.objects.commands.XpCommand;
 import fr.zenoobossdev.epiniumod.objects.data.money.EventHandler;
-import fr.zenoobossdev.epiniumod.objects.data.money.PacketCapabilitiesTutoriel;
-import fr.zenoobossdev.epiniumod.objects.data.money.TutoCapabilities;
+import fr.zenoobossdev.epiniumod.packets.XpMessage;
 import fr.zenoobossdev.epiniumod.util.handlers.RenderGuiHandler;
 import fr.zenoobossdev.epiniumod.tabs.EpiniumTab;
 import fr.zenoobossdev.epiniumod.util.Reference;
@@ -32,8 +32,7 @@ import net.minecraftforge.server.permission.PermissionAPI;
 public class Main
 {
 
-    @CapabilityInject(TutoCapabilities.class)
-    public static final Capability<TutoCapabilities> TUTO_CAP = null;
+
 
 
     public static SimpleNetworkWrapper network;
@@ -56,7 +55,7 @@ public class Main
         proxy.registerGuis();
 
         network = NetworkRegistry.INSTANCE.newSimpleChannel(Reference.MODID);
-        network.registerMessage(PacketCapabilitiesTutoriel.ServerHandler.class, PacketCapabilitiesTutoriel.class, 3, Side.SERVER);
+        network.registerMessage(XpMessage.XpMessageHandler.class, XpMessage.class, 0, Side.SERVER);
 
 
         RegistryHandler.preInitRegistries();
@@ -68,7 +67,6 @@ public class Main
     public static void init(FMLInitializationEvent e)
     {
         RegistryHandler.initRegistries();
-        TutoCapabilities.register();
         PermissionAPI.registerNode("modid.command.xp", DefaultPermissionLevel.OP, "Allows players to use the xp command");
         PermissionAPI.registerNode("modid.command.level", DefaultPermissionLevel.OP, "Allows players to use the job command");
         PermissionAPI.registerNode("modid.command.job", DefaultPermissionLevel.ALL, "Allows players to use the job command");

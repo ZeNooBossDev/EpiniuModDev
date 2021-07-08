@@ -44,12 +44,11 @@ public class JobCommand extends CommandBase
 
         if (sender instanceof EntityPlayer){
             if (args[0].equals("miner")){
-                /*int xpToLevelUp = ((EntityPlayer) sender).getCapability(JobMinerWrapper.JOB_MINER_CAPABILITY, null).getXpLevelUp()-((EntityPlayer) sender).getCapability(JobMinerWrapper.JOB_MINER_CAPABILITY, null).getXp();
+                int xpToLevelUp = ((EntityPlayer) sender).getCapability(JobMinerWrapper.JOB_MINER_CAPABILITY, null).getXpLevelUp()-((EntityPlayer) sender).getCapability(JobMinerWrapper.JOB_MINER_CAPABILITY, null).getXp();
                 sender.sendMessage(new TextComponentString("Vous avez : "+((EntityPlayer) sender).getCapability(JobMinerWrapper.JOB_MINER_CAPABILITY, null).getXp()+"xp !"));
                 sender.sendMessage(new TextComponentString("Vous êtes au level : "+((EntityPlayer) sender).getCapability(JobMinerWrapper.JOB_MINER_CAPABILITY, null).getLevel()));
                 sender.sendMessage(new TextComponentString("Il vous reste : "+ xpToLevelUp + "xp pour level up !"));
-                sender.sendMessage(new TextComponentString("Vous pouvez xp avec : "+((EntityPlayer) sender).getCapability(JobMinerWrapper.JOB_MINER_CAPABILITY, null).howToXp()));*/
-                Minecraft.getMinecraft().displayGuiScreen(new JobsGUI());
+                sender.sendMessage(new TextComponentString("Vous pouvez xp avec : "+((EntityPlayer) sender).getCapability(JobMinerWrapper.JOB_MINER_CAPABILITY, null).howToXp()));
             }
         }
     }
